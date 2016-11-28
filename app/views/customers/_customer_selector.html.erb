@@ -1,0 +1,6 @@
+<%= 
+	 f.select :customer_id, options_for_select(Customer.all.map{ |c|
+	 [c.display_name, c.id ]
+	 },
+   selected_key = f.object.customer_id)
+	 %>

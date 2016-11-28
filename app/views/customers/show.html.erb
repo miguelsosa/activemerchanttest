@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer.display_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @customer.company %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @customer.profile_id %>
+</p>
+
+
+<p>
+  <strong>Addresses:</strong>
+  <% if @customer.addresses.count > 0 %>
+    <ul>
+    <% @customer.addresses.each do |address| %>
+      <li><%= render 'addresses/compressed_address', address: address %></li>
+    <% end %>
+    </ul>
+
+  <% else %>
+  None
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  last4: MyString
+  profile_id: 
+
+two:
+  customer: two
+  last4: MyString
+  profile_id: 

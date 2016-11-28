@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activemerchatntest</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= controller.controller_name %> : <%= controller.action_name %>
+    <hr>
+    <%= yield %>
+    <hr>
+    <%= link_to "Back to HOME", root_path %>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#y = ActiveMerchant::Billing::Response:0x007fa7fcaa92f8
+f = {
+  @params={
+    "messages"=>{
+      "result_code"=>"Error",
+      "message"=>{
+        "code"=>"E00003",
+        "text"=>"The element 'payment' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd' 
+has incomplete content. List of possible elements expected: 
+'creditCard,
+bankAccount,
+trackData,
+encryptedTrackData,
+payPal,
+opaqueData,
+emv' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd'."}}},
+
+  @message="The element 'payment' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd' has incomplete content. List of possible elements expected: 'creditCard,
+bankAccount,
+trackData,
+encryptedTrackData,
+payPal,
+opaqueData,
+emv' in namespace 'AnetApi/xml/v1/schema/AnetApiSchema.xsd'.",
+  @success=false,
+  @test=true,
+  @authorization=nil,
+  @fraud_review=nil,
+  @error_code="E00003",
+  @emv_authorization=nil,
+  @avs_result={"code"=>nil,
+               "message"=>nil,
+               "street_match"=>nil,
+               "postal_match"=>nil},
+  @cvv_result={"code"=>nil,
+               "message"=>nil}>

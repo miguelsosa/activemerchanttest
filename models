@@ -1,0 +1,15 @@
+avsonly(customer_profile_id, card_profile_id, shipping_address_id, cvv)
+get_profile(profile_id)
+create_profile
+add_card_to_profile(profile_id, cardnum, expdate, street, zip, cvv
+
+first_name last_name, company_name, email
+address1, city, stae, zip, country, phone
+last4, expdate, cardnum, cvv
+amount (items)
+
+sale_from_profile
+return_from_profile
+
+merchant_id_for_customer
+
